@@ -18,6 +18,11 @@ body {
 
 */
 
+/* COOKIE BAR VERBERGEN */
+.cookieWarningBox {
+	display: none;
+}
+
 @media only screen and (max-width: 990px) {
 	#page-container,
 	#header,
