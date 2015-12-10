@@ -19,6 +19,18 @@ body {
 */
 
 @media only screen and (max-width: 990px) {
+	#page-container,
+	#header,
+	#content,
+	#toptaken,
+	#footer {
+		width: 100%;
+	}
+	
+	#middleColumn,
+	#rightColumn {
+		width: 100%;
+	}
 		
 }
 
