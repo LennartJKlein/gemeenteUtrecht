@@ -3,13 +3,19 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-	
+ body{ 
+ 	background: #F00;
+ }	
 }
 
 @media only screen and (max-width: 768px) {
-	
+ body{ 
+ 	background: #0F0;
+ }		
 }
 
 @media only screen and (max-width: 480px) {
-	
+	 body{ 
+ 	background: #00F;
+ }	
 }
