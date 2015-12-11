@@ -23,7 +23,12 @@ CSS Styleguide
 	display: none;
 }
 
+/* FONT AWESOME IMPORTEREN */
+@import "vendor/font-awesome.min.css";
+
+
 @media only screen and (max-width: 990px) {
+	
 	body {
 		background-color: #0F0;
 	}
@@ -31,6 +36,8 @@ CSS Styleguide
 	#page-container,
 	#topMenu,
 	#header,
+	#featureBlock.featureBlockHome,
+	#nv #featureBlock,
 	#content,
 	#toptaken,
 	#footer {
@@ -38,13 +45,50 @@ CSS Styleguide
 	}
 	
 	#page-container {
-		padding: 15px;
+		padding: 3%;
 	}
 	#header {
-	    padding: 0 0 0 0;
-		-webkit-box-sizing: border-box;
-		   -moz-box-sizing: border-box;
-				box-sizing: border-box;		
+		height: auto;
+	    padding: 0 0 20px 0;
+	}
+	#header h1 {
+		height: 100%;
+		margin: 0;
+	}
+	
+	#searchBar {
+	    top: 50%;
+		right: 0;
+		-webkit-transform: translateY(-90%);
+		   -moz-transform: translateY(-90%);
+				transform: translateY(-90%);
+	}
+	
+	#nv-navBlock-wrap {
+		position: relative;
+		border-top: 1px solid #c6c6c6;
+	}
+	#nv-navBlock-wrap hr {
+		display: none;
+	}
+	#nv .nv-navBlockYellowBorder, 
+	.featureBlockHome .nv-navBlockYellowBorder {
+		left: 0;
+	}
+	#featureBlock.featureBlockHome #mainMenu,
+	#nv #mainMenu {
+		padding-left: 10px;
+		margin-right: 0;
+	}
+	#featureBlock {
+		padding-left: 0;
+	}
+	.nv-col1-home {
+		width: calc(100% - 202px);
+	}
+	
+	.contactBlock {
+		padding: 15px;
 	}
 	
 	#middleColumn,
@@ -54,6 +98,16 @@ CSS Styleguide
 	}
 	.colHomepage #colMid {
 		width: 100%;
+	}
+	
+	#header,
+	#page-container,
+	#featureBlock.featureBlockHome #mainMenu,
+	#nv #mainMenu,
+	.contactBlock {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
 	}
 		
 }
@@ -65,10 +119,22 @@ CSS Styleguide
 	.colHomepage #colLeft {
 		margin: 0;
 	}
+	
+	/* {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+	} */
 }
 
 @media only screen and (max-width: 550px) {
 	body {
 		background-color: #00F;
 	}
+	
+	/* {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+	} */
 }
