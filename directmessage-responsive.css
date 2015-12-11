@@ -48,19 +48,14 @@ CSS Styleguide
 	
 	#page-container {
 		padding: 15px;
-<<<<<<< HEAD
 	}	
-
-=======
-	}
-	
 	#header {
 	    padding: 0 0 0 0;
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 				box-sizing: border-box;		
 	}
->>>>>>> origin/version1.0
+
 }
 
 @media only screen and (max-width: 768px) {
