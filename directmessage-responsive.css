@@ -41,19 +41,12 @@ body {
 	#colWide {
 		width: 100%;
 	}
-	.colHomepage #colMid {
-		width: 100%;
-		margin-left: 5%; 
-	}
 		
 }
 
 @media only screen and (max-width: 768px) {
 	body {
 		background-color: #F00;
-	}
-	#colLeft {
-		width: 100%;
 	}		
 }
 
