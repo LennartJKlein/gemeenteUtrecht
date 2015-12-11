@@ -1,21 +1,21 @@
 /*
 
 CSS Styleguide
-body { 
-	background: #00F;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-			box-sizing: border-box;
-	-webkit-border-radius: 50% 50%;
-	   -moz-border-radius: 50% 50%;
-		box-border-radius: 50% 50%;
-}
-
-.menu,
-.honden-ren,
-#navigatie {
-}
-
+	body { 
+		background: #00F;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+		-webkit-border-radius: 50% 50%;
+		   -moz-border-radius: 50% 50%;
+			box-border-radius: 50% 50%;
+	}
+	
+	.menu,
+	.honden-ren,
+	#navigatie {
+		background: #FF0;
+	}
 */
 
 /* COOKIE BAR VERBERGEN */
@@ -29,6 +29,7 @@ body {
 	}
 	
 	#page-container,
+	#topMenu,
 	#header,
 	#content,
 	#toptaken,
@@ -47,8 +48,19 @@ body {
 	
 	#page-container {
 		padding: 15px;
+<<<<<<< HEAD
 	}	
 
+=======
+	}
+	
+	#header {
+	    padding: 0 0 0 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;		
+	}
+>>>>>>> origin/version1.0
 }
 
 @media only screen and (max-width: 768px) {
@@ -60,7 +72,7 @@ body {
 	}	
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
 	body {
 		background-color: #00F;
 	}
