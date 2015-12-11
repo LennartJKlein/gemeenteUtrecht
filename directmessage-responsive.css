@@ -100,7 +100,27 @@ CSS Styleguide
 	.colHomepage #colMid {
 		width: 100%;
 	}
-	
+
+	.colHomepage #colLeft {
+		margin: 0 0 0 0px;
+		width: 33%;
+		border-right: 0;
+	}
+	.colHomepage #colMid {
+    	width: 28.3%;
+    	float: left;
+    	margin: 10 0 0 0px;
+    	border-right: 0;
+
+	}
+
+	.colHomepage #colRight {
+    	width: 25.3%;
+    	margin: 15 0 0 0px;
+    	border-left: 0; 
+    	float: left;
+	}
+
 	#header,
 	#page-container,
 	#featureBlock.featureBlockHome #mainMenu,
@@ -116,19 +136,18 @@ CSS Styleguide
 @media only screen and (max-width: 768px) {
 	body {
 		background-color: #F00;
-	}	
-	.colHomepage #colLeft {
-		margin: 0;
-		width: 44%;
 	}
+
 	.colHomepage #colMid {
 		padding-left: 15px;
 	}
+
 	.colHomepage #colRight {
 		display: inline-block;
 		width: 100%;
 		margin: 15px 0 0 0;
 	}
+
 	#hStadspromotie .hStadspromotieItem, 
 	.hStadspromotieItem {
 	position: relative;
@@ -173,10 +192,13 @@ CSS Styleguide
 	.hStadspromotieItem{
 		position: relative;
     	width: 80%;
-    	height: 85px;
+    	height: auto;
     	margin-bottom: 28px;
     	display: inline-block;
     	float: none;
     	padding: 0 5px;
+	}
+	.hStadspromotieItem img{
+		height: auto;
 	}
 }
