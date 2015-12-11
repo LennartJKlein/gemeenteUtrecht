@@ -42,10 +42,7 @@ CSS Styleguide
 	#colWide {
 		width: 100%;
 	}
-	.colHomepage #colMid {
-		width: 100%;
-	}
-	
+
 	#page-container {
 		padding: 15px;
 	}
@@ -63,11 +60,69 @@ CSS Styleguide
 	}	
 	.colHomepage #colLeft {
 		margin: 0;
-	}	
+		width: 44%;
+	}
+	.colHomepage #colMid {
+		padding-left: 15px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+	.colHomepage #colRight {
+		display: inline-block;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+		margin: 15px 0 0 0;
+	}
+	#hStadspromotie .hStadspromotieItem, .hStadspromotieItem {
+	position: relative;
+    width: 33.3%;
+    height: 85px;
+    margin-bottom: 28px;
+    display: inline-block;
+    float: left;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	}
+
 }
 
 @media only screen and (max-width: 550px) {
 	body {
 		background-color: #00F;
+	}
+	.colHomepage #colLeft {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+		border-right: 0px;
+	}
+	.colHomepage #colMid {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+		border-right: 0px;
+		padding: 0px;
+	}
+	.colHomepage #colRight {
+		padding: 0px;
+	}
+	#hStadspromotie .hStadspromotieItem, .hStadspromotieItem{
+	position: relative;
+    width: 80%;
+    height: 85px;
+    margin-bottom: 28px;
+    display: inline-block;
+    float: none;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;		
 	}
 }
