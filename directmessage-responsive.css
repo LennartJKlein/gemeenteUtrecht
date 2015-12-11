@@ -80,15 +80,26 @@ CSS Styleguide
 		padding-left: 10px;
 		margin-right: 0;
 	}
+	.slides {
+		float: none;
+	}
 	#featureBlock {
 		padding-left: 0;
 	}
-	.nv-col1-home {
-		width: calc(100% - 202px);
+	.nv-col1,
+	.nv-col1-home,
+	.nv-col2,
+	.nv-col3,
+	.nv-col4,
+	.nv-col4-home {
+		min-height: 252px;	
 	}
-	
+	.nv-col1-home {
+		width: calc(100% - 383px);
+	}
 	.contactBlock {
-		padding: 15px;
+		padding: 15px 0 15px 15px;
+		width: 100%;
 	}
 	
 	#middleColumn,
