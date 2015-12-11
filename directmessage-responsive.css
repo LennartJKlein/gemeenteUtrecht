@@ -48,10 +48,6 @@ CSS Styleguide
 	
 	#page-container {
 		padding: 15px;
-<<<<<<< HEAD
-	}	
-
-=======
 	}
 	
 	#header {
@@ -60,14 +56,13 @@ CSS Styleguide
 		   -moz-box-sizing: border-box;
 				box-sizing: border-box;		
 	}
->>>>>>> origin/version1.0
 }
 
 @media only screen and (max-width: 768px) {
 	body {
 		background-color: #F00;
 	}	
-	.colHomepage #colLeft{
+	.colHomepage #colLeft {
 		margin: 0;
 	}	
 }
