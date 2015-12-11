@@ -83,6 +83,10 @@ CSS Styleguide
 	.slides {
 		float: none;
 	}
+	.rslides img {
+		height: 100%;
+		width: auto;
+	}
 	#featureBlock {
 		padding-left: 0;
 	}
@@ -91,7 +95,10 @@ CSS Styleguide
 	.nv-col2,
 	.nv-col3,
 	.nv-col4,
-	.nv-col4-home {
+	.nv-col4-home,
+	.rslides,
+	.rslides li {
+		height: 252px;
 		min-height: 252px;	
 	}
 	.nv-col1-home {
@@ -124,7 +131,6 @@ CSS Styleguide
     	border-right: 0;
 
 	}
-
 	.colHomepage #colRight {
     	width: 25.3%;
     	margin: 15 0 0 0px;
