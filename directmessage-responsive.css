@@ -41,13 +41,23 @@ body {
 	#colWide {
 		width: 100%;
 	}
-		
+	.colHomepage #colMid {
+		width: 100%;
+	}
+	
+	#page-container {
+		padding: 15px;
+	}	
+
 }
 
 @media only screen and (max-width: 768px) {
 	body {
 		background-color: #F00;
-	}		
+	}	
+	.colHomepage #colLeft{
+		margin: 0;
+	}	
 }
 
 @media only screen and (max-width: 480px) {
