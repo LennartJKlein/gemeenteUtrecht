@@ -137,6 +137,10 @@ CSS Styleguide
 	body {
 		background-color: #F00;
 	}
+	
+	.colHomepage #colLeft {
+		width: 52%;
+	}
 
 	.colHomepage #colMid {
 		padding-left: 15px;
