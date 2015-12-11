@@ -1,0 +1,31 @@
+/*
+
+CSS Styleguide
+body { 
+	background: #00F;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-border-radius: 50% 50%;
+	   -moz-border-radius: 50% 50%;
+		box-border-radius: 50% 50%;
+}
+
+.menu,
+.honden-ren,
+#navigatie {
+}
+
+*/
+
+@media only screen and (max-width: 990px) {
+		
+}
+
+@media only screen and (max-width: 768px) {
+			
+}
+
+@media only screen and (max-width: 480px) {
+
+}

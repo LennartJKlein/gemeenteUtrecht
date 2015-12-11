@@ -1,0 +1,74 @@
+/*
+
+CSS Styleguide
+	body { 
+		background: #00F;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+		-webkit-border-radius: 50% 50%;
+		   -moz-border-radius: 50% 50%;
+			box-border-radius: 50% 50%;
+	}
+	
+	.menu,
+	.honden-ren,
+	#navigatie {
+		background: #FF0;
+	}
+*/
+
+/* COOKIE BAR VERBERGEN */
+.cookieWarningBox {
+	display: none;
+}
+
+@media only screen and (max-width: 990px) {
+	body {
+		background-color: #0F0;
+	}
+	
+	#page-container,
+	#topMenu,
+	#header,
+	#content,
+	#toptaken,
+	#footer {
+		width: 100%;
+	}
+	
+	#middleColumn,
+	#rightColumn,
+	#colWide {
+		width: 100%;
+	}
+	.colHomepage #colMid {
+		width: 100%;
+	}
+	
+	#page-container {
+		padding: 15px;
+	}	
+	#header {
+	    padding: 0 0 0 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;		
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		background-color: #F00;
+	}	
+	.colHomepage #colLeft{
+		margin: 0;
+	}	
+}
+
+@media only screen and (max-width: 550px) {
+	body {
+		background-color: #00F;
+	}
+}
