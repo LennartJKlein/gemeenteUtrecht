@@ -26,6 +26,10 @@ CSS Styleguide
 /* FONT AWESOME IMPORTEREN */
 @import "vendor/font-awesome.min.css";
 
+/* Toptaks height fix*/
+.topTasks.homeTopTasks {
+	height: 100%;
+	}
 
 @media only screen and (max-width: 990px) {
 	
@@ -108,12 +112,14 @@ CSS Styleguide
 		padding: 15px 0 15px 15px;
 		width: 100%;
 	}
-	.topTasks {
+	.topTasks,
+	#toptaken {
 		text-align: left;
 		height: 100% !important;
 	}
 
-	.topTasks li {
+	.topTasks li,
+	#toptaken li {
     	display: inline-block;
     	vertical-align: middle;
    		width: 24.3%;
@@ -199,6 +205,7 @@ CSS Styleguide
     width: 31.3%;
     float: left;
     height: 200px;
+	}
 
 	.colHomepage #colLeft, 
 	.colHomepage #colMid,
@@ -256,7 +263,8 @@ CSS Styleguide
     	padding: 0!important;
 	}
 
-	.topTasks li {
+	.topTasks li,
+	#toptaken li  {
     	display: inline-block;
     	vertical-align: middle;
     	float: left;
