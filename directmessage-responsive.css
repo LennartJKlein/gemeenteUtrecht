@@ -1,5 +1,4 @@
 /*
-
 CSS Styleguide
 	body { 
 		background: #00F;
@@ -18,19 +17,22 @@ CSS Styleguide
 	}
 */
 
+/* FONT AWESOME IMPORTEREN */
+@import url('vendor/font-awesome.min.css');
+
 /* COOKIE BAR VERBERGEN */
 .cookieWarningBox {
 	display: none;
 }
 
-/* FONT AWESOME IMPORTEREN */
-@import "vendor/font-awesome.min.css";
-
-/* Toptaks height fix*/
-.topTasks.homeTopTasks {
-	height: 100%;
+/* MOBILE MENU TOGGLE */
+#featureBlock.featureBlockHome #mainMenu .menu-toggle, 
+#nv #mainMenu .menu-toggle {
+	display: none;
 }
 
+
+/* GREEN - SMALL DESKTOP*/
 @media only screen and (max-width: 990px) {
 	
 	body {
@@ -81,8 +83,13 @@ CSS Styleguide
 	}
 	#featureBlock.featureBlockHome #mainMenu,
 	#nv #mainMenu {
-		padding-left: 10px;
+		padding-left: 0;
 		margin-right: 0;
+		width: 220px;
+	}
+	#mainMenu a {
+		padding-left: 3px;
+		padding-right: 3px;
 	}
 	.slides {
 		float: none;
@@ -115,21 +122,31 @@ CSS Styleguide
 		width: 25%;
 	}
 	.nv-col1-home {
-		width: calc(100% - 383px);
+		width: calc(75% - 230px);
+	}
+	.nv-col4-home {
+		width: 25%;
 	}
 	.contactBlock {
 		padding: 15px 0 15px 15px;
 		width: 100%;
 	}
 
-	.topTasksButton {
-		width: 82%;
-	}
 
 	.topTasks,
 	#toptaken {
 		text-align: left;
-		height: 100% !important;
+		height: auto;
+	}
+	.topTasks.homeTopTasks {
+		margin: 20px 0;
+	}
+	.topTasks.homeTopTasks:after {
+		content: '';
+		clear: both;
+	}
+	.topTasksButton {
+		width: 82%;
 	}
 
 	.topTasks li,
@@ -184,7 +201,9 @@ CSS Styleguide
 	#header,
 	#page-container,
 	#featureBlock.featureBlockHome #mainMenu,
+	#featureBlock.featureBlockHome #mainMenu li,
 	#nv #mainMenu,
+	#nv #mainMenu li,
 	.contactBlock,
 	#footer {
 		-webkit-box-sizing: border-box;
@@ -194,9 +213,146 @@ CSS Styleguide
 		
 }
 
+/* RED - TABLET */
 @media only screen and (max-width: 768px) {
 	body {
 		background-color: #F00;
+	}
+	
+	#header {
+		padding-top: 10px;
+	}
+	
+	#topMenu {
+		height: 55px;
+		line-height: 55px;
+		padding: 0;
+	}
+	#topMenu ul {
+		margin-top: 0;
+		float: none;
+		width: 100%;
+	}
+	#topMenu li {
+	    display: inline-block;
+		width: 25%;
+		padding: 0;
+		float: none;
+		vertical-align: top;
+		text-align: center;
+	}
+	#topMenu .mail span,
+	#topMenu .print span,
+	#topMenu .english span {
+		display: inline-block;
+		float: none;
+		margin-right: 4px;
+		vertical-align: middle;
+	}
+	#topMenu a {
+	    padding: 0;
+		height: 100%;
+		display: inline-block;
+	}
+	
+	#readspeaker_button1 {
+		height: 100%;
+		border: 0;
+		vertical-align: middle;
+		padding: 8px;
+		margin: 0;
+   		background-color: transparent;
+	}
+	#readspeaker_button1 a {	
+		background-color: #fafafa;
+		border: 1px solid #636363;
+		padding: 5px;
+		line-height: 26px;
+		vertical-align: middle;	
+	}
+	#readspeaker_button1 a > span {
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+	}
+	.rsbtn_colorskin .rsbtn_left .rsbtn_text {
+		margin-right: 0;
+	}
+	
+	#featureBlock:after {
+		content: '';
+		clear: both;
+		display: block;
+		height: 1px;
+	}
+	
+	#featureBlock.featureBlockHome #mainMenu,
+	#nv #mainMenu {
+		width: calc(65% - 7px);
+		margin-left: 7px;
+		background-color: #f6f6f6;
+		border-right: 1px solid #c6c6c6;
+	}
+	
+	#featureBlock.featureBlockHome #mainMenu li,
+	#nv #mainMenu li {
+		width: 50%;
+		height: 52px;
+		line-height: 52px;
+		display: inline-block;
+		vertical-align: bottom;
+		border-top: 0;
+		border-bottom: 1px solid #c6c6c6;
+		background-color: #fff;
+	}
+	#featureBlock.featureBlockHome #mainMenu li:nth-of-type(odd),
+	#nv #mainMenu li:nth-of-type(odd) {
+		border-right: 1px solid #c6c6c6;
+	}
+	#mainMenu li.lastyellow {
+		border-top: 1px solid #c6c6c6;
+	}
+	#featureBlock.featureBlockHome #mainMenu a,
+	#mainMenu a,
+	#nv #mainMenu a {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		padding: 10px 15px;
+		line-height: 1.45em;
+		vertical-align: middle;
+	}
+	#nv .nv-navBlockYellowBorder, 
+	.featureBlockHome .nv-navBlockYellowBorder {
+		border-width: 7px;
+	}
+	
+	.nv-col1-home {
+		width: 35%;
+	}
+	#nv .nv-navBlockYellowBorder, 
+	.featureBlockHome .nv-navBlockYellowBorder,
+	.nv-col1-home,
+	.rslides,
+	.rslides li {
+		height: 260px;
+	}
+	.nv-col4-home {
+		width: 35%;
+		height: auto;
+		float: right;
+	}
+	
+	.contactBlock {
+		margin-top: 35px;
+		height: auto;
+	}
+	
+	#toptaken {
+		width: calc(65% - 20px);
+		margin-top: -237px;
+		z-index: 1;
+    	position: relative;
 	}
 	
 	.colHomepage #colLeft {
@@ -227,26 +383,29 @@ CSS Styleguide
 
 	#hStadspromotie .hStadspromotieItem, 
 	.hStadspromotieItem {
-	position: relative;
-    width: 33.3%;
-    height: 85px;
-    margin-bottom: 28px;
-    display: inline-block;
-    float: left;
-    padding: 0 5px;
+		position: relative;
+		width: 33.3%;
+		height: 85px;
+		margin-bottom: 28px;
+		display: inline-block;
+		float: left;
+		padding: 0 5px;
 	}
 
 	#footer .column {
-    width: 31.3%;
-    float: left;
-    height: 200px;
+		width: 31.3%;
+		float: left;
+		height: 200px;
 	}
-
+	
+	#readspeaker_button1,
+	#readspeaker_button1 a,
 	.colHomepage #colLeft, 
 	.colHomepage #colMid,
 	.colHomepage #colRight,
 	#hStadspromotie .hStadspromotieItem, 
-	.hStadspromotieItem{
+	.hStadspromotieItem,
+	#mainMenu a {
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 				box-sizing: border-box;
@@ -254,19 +413,104 @@ CSS Styleguide
 
 }
 
+/* BLUE - MOBILE */
 @media only screen and (max-width: 550px) {
 	body {
 		background-color: #00F;
 	}
-	#mainMenu {
-		width: 100% !important;
-		padding-bottom: 30px !important;
+	
+	#topMenu li {
+		width: 15%;
+		font-size: 1px;
+		color: rgba(0,0,0,0);
+	}
+	
+	#featureBlock.featureBlockHome #mainMenu,
+	#nv #mainMenu {
+		width: calc(100% - 7px);
+		margin-top: 1px;
 	}
 
-		.nv-col1, .nv-col2, .nv-col3, .nv-col4 {
+	/* NAVIGATIE DROPDOWN */
+	
+	.nv-navBlock:after {
+		content: '';
+		clear: both;
+		display: block;
+		height: 1px;
+	}
+	
+	#featureBlock.featureBlockHome #mainMenu, 
+	#nv #mainMenu {
+		border-left: 7px solid #FC0;
+		margin-left: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	#featureBlock.featureBlockHome #mainMenu .menu-toggle, 
+	#nv #mainMenu .menu-toggle {
+		display: block;
+		height: 52px;
+		width: 100%;
+		margin: 0;
+		padding: 10px 15px;
+		line-height: 34px;
+		vertical-align: middle;
+		border-bottom: 1px solid #c6c6c6;
+		color: #444;
+		cursor: pointer;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;		
+	}
+	#featureBlock.featureBlockHome #mainMenu .menu-toggle i, 
+	#nv #mainMenu .menu-toggle i {
+		float: right;
+		font-size: 21px;
+		line-height: 34px;
+	}
+	#featureBlock.featureBlockHome #mainMenu ul,
+	#nv #mainMenu ul {
+		display: none;
+	}
+	#featureBlock.featureBlockHome #mainMenu li, 
+	#nv #mainMenu li {
+		display: block;
+		width: 100%;
+	}
+	#featureBlock.featureBlockHome #mainMenu li:nth-of-type(odd),
+	#nv #mainMenu li:nth-of-type(odd) {
+		border-right: 0;
+	}
+	
+	#nv .nv-navBlockYellowBorder, 
+	.featureBlockHome .nv-navBlockYellowBorder {
+		display: none;
+	}
+	
+	/* eind NAVIGATIE DROPDOWN */
+
+	.nv-col1, .nv-col2, .nv-col3, .nv-col4 {
 		width: 45%;
 	}
 
+	.nv-col1-home {
+		width: 100%;
+		margin-top: 35px;
+	}
+	.nv-col4-home {
+		width: 100%;
+		float: none;
+	}
+	.contactBlock {
+		display: none;	
+	}
+	
+	#toptaken {
+		width: 100%;
+		margin-top: inherit;
+	}
+	
 	.colHomepage #colLeft {
 		width: 100%;
 		border-right: 0px;
@@ -298,7 +542,6 @@ CSS Styleguide
 	}
 
 	.topTasks.homeTopTasks {
-    	margin-right: 11px;
    		height: 100%;
 	}
 
