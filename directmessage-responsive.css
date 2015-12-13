@@ -105,6 +105,15 @@ CSS Styleguide
 		height: 252px;
 		min-height: 252px;	
 	}
+	#nv-navBlock {
+		height: 100%;
+		width: 100%;
+		background-image: none;
+	}
+
+	.nv-col1, .nv-col2, .nv-col3, .nv-col4 {
+		width: 25%;
+	}
 	.nv-col1-home {
 		width: calc(100% - 383px);
 	}
@@ -112,6 +121,11 @@ CSS Styleguide
 		padding: 15px 0 15px 15px;
 		width: 100%;
 	}
+
+	.topTasksButton {
+		width: 82%;
+	}
+
 	.topTasks,
 	#toptaken {
 		text-align: left;
@@ -154,6 +168,15 @@ CSS Styleguide
     	float: left;
 	}
 
+	#leftColumn {
+		width: 42% !important;
+		margin-left: 0px !important;
+	}
+
+	#mainContent {
+		width: 78% !important;
+	}
+
 	#footer {
 		padding: 0px 0px 0px 18px;
 	}
@@ -190,6 +213,18 @@ CSS Styleguide
 		margin: 15px 0 0 0;
 	}
 
+	#leftColumn {
+		width: 65% !important;
+	}
+
+	#middleColumn {
+		margin-right: 0px !important;
+	}
+
+	#rightColumn {
+		float: left !important;
+	}
+
 	#hStadspromotie .hStadspromotieItem, 
 	.hStadspromotieItem {
 	position: relative;
@@ -223,15 +258,26 @@ CSS Styleguide
 	body {
 		background-color: #00F;
 	}
+	#mainMenu {
+		width: 100% !important;
+		padding-bottom: 30px !important;
+	}
+
+		.nv-col1, .nv-col2, .nv-col3, .nv-col4 {
+		width: 45%;
+	}
+
 	.colHomepage #colLeft {
 		width: 100%;
 		border-right: 0px;
 	}
+
 	.colHomepage #colMid {
 		width: 100%;
 		border-right: 0px;
 		padding: 0px;
 	}
+
 	.colHomepage #colRight {
 		padding: 0px;
 	}
@@ -246,9 +292,11 @@ CSS Styleguide
     	float: none;
     	padding: 0 5px;
 	}
+
 	.hStadspromotieItem img{
 		height: auto;
 	}
+
 	.topTasks.homeTopTasks {
     	margin-right: 11px;
    		height: 100%;
@@ -270,6 +318,7 @@ CSS Styleguide
     	float: left;
     	width: 50%;
 	}
+
 	#footer
  	.column,
  	.first,
