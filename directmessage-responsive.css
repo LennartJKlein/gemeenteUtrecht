@@ -31,14 +31,29 @@ CSS Styleguide
 	display: none;
 }
 
+.topTasks.homeTopTasks,
+.topTasks,
+#toptaken {
+		height: 100% !important;
+}
 
+#content input[type=submit] {
+    	margin-left: 0px;
+    	margin-top: 10px;
+}
+#mainContent {
+	background: none !important;
+}
+    
 /* GREEN - SMALL DESKTOP*/
 @media only screen and (max-width: 990px) {
 	
 	body {
 		background-color: #0F0;
 	}
-	
+	.nv-navBlockYellowBorder {
+		border: none;
+	}
 	#page-container,
 	#topMenu,
 	#header,
@@ -49,7 +64,15 @@ CSS Styleguide
 	#footer {
 		width: 100%;
 	}
-	
+	#topbox {
+    	bottom: 10px;
+    	float: left;
+    	height: 100%;
+    	position: initial;
+    	right: 5px;
+    	width: 100%;
+    }
+
 	#page-container {
 		padding: 3%;
 	}
@@ -132,6 +155,18 @@ CSS Styleguide
 		width: 100%;
 	}
 
+	.headerTitle4Images{
+		width: 100%;
+	}
+
+	.image,
+	.image img,
+	.image-center .image {
+		width: 100%;
+	}
+	.headerImage img {
+    	width: 80%;
+    }
 
 	.topTasks,
 	#toptaken {
@@ -154,6 +189,10 @@ CSS Styleguide
     	display: inline-block;
     	vertical-align: middle;
    		width: 24.3%;
+   	}
+
+   	.menuTitle {
+   		margin: 0 0 11px 6px;
    	}
 
 	#middleColumn,
@@ -191,7 +230,11 @@ CSS Styleguide
 	}
 
 	#mainContent {
-		width: 78% !important;
+		width: 100% !important;
+	}
+
+	.layout-body {
+		width: 90%;
 	}
 
 	#footer {
@@ -222,7 +265,10 @@ CSS Styleguide
 	#header {
 		padding-top: 10px;
 	}
-	
+	.topTasks li, #toptaken li {
+	width: 49%;
+	}
+
 	#topMenu {
 		height: 55px;
 		line-height: 55px;
@@ -233,6 +279,7 @@ CSS Styleguide
 		float: none;
 		width: 100%;
 	}
+
 	#topMenu li {
 	    display: inline-block;
 		width: 25%;
@@ -347,7 +394,10 @@ CSS Styleguide
 		margin-top: 35px;
 		height: auto;
 	}
-	
+	.topTasks,
+	#toptaken {
+		margin: 0px;
+	}
 	#toptaken {
 		width: calc(65% - 20px);
 		margin-top: -237px;
@@ -355,6 +405,21 @@ CSS Styleguide
     	position: relative;
 	}
 	
+	.blue-blue .csc-header,
+	.blue-lightBlue .csc-header,
+	.blue-white .csc-header,
+	.darkBlue-white .csc-header,
+	.lightBlue-lightBlue .csc-header,
+	.lightYellow-lightYellow .csc-header,
+	.red-lightYellow .csc-header,
+	.red-red .csc-header,
+	.red-white .csc-header,
+	.red-yellow .csc-header,
+	.yellow-white .csc-header,
+	.yellow-yellow .csc-header {
+		width: 80%;
+	}
+
 	.colHomepage #colLeft {
 		width: 52%;
 	}
@@ -392,6 +457,11 @@ CSS Styleguide
 		padding: 0 5px;
 	}
 
+	.layout-body {
+		width: 80%;
+		padding-left: 2%;
+	}
+
 	#footer .column {
 		width: 31.3%;
 		float: left;
@@ -418,7 +488,21 @@ CSS Styleguide
 	body {
 		background-color: #00F;
 	}
-	
+	.blue-blue .csc-header,
+	.blue-lightBlue .csc-header,
+	.blue-white .csc-header,
+	.darkBlue-white .csc-header,
+	.lightBlue-lightBlue .csc-header,
+	.lightYellow-lightYellow .csc-header,
+	.red-lightYellow .csc-header,
+	.red-red .csc-header,
+	.red-white .csc-header,
+	.red-yellow .csc-header,
+	.yellow-white .csc-header,
+	.yellow-yellow .csc-header {
+		width: 40%;
+	}
+
 	#topMenu li {
 		width: 15%;
 		font-size: 1px;
@@ -507,7 +591,7 @@ CSS Styleguide
 	}
 	
 	#toptaken {
-		width: 100%;
+		width: 100% !important;
 		margin-top: inherit;
 	}
 	
@@ -541,6 +625,11 @@ CSS Styleguide
 		height: auto;
 	}
 
+	.image,
+	.image-center .image {
+		width: 100%;
+	}
+
 	.topTasks.homeTopTasks {
    		height: 100%;
 	}
@@ -548,7 +637,6 @@ CSS Styleguide
 	.topTasks {
     	text-align: -webkit-left;
     	list-style: none;
-    	margin: 20px 24px 0 42px;
     	background: #f6f6f6;
     	border: 1px solid #cfcfcf;
     	padding: 0!important;
@@ -560,6 +648,30 @@ CSS Styleguide
     	vertical-align: middle;
     	float: left;
     	width: 50%;
+	}
+
+	.toptakencontact ul.topTasks {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.twocolumngroup-col1, .twocolumngroup-col2 {
+    	width: 75% !important;
+	}
+
+	.powermail_all dl, .powermail_date, .powermail_input, .powermail_select, .powermail_text, .powermail_textarea, input[type=password], input[type=search], input[type=text], textarea {
+    	float: left;
+    	padding: 5px 3px;
+    	width: 100%;
+    	font-family: Verdana,'DejaVu Sans',sans-serif;
+    	font-size: 1em;
+    }
+    iframe {
+    	width: 100%;
+    }
+
+    #c217322 .layout-body {
+    width: 55%;
 	}
 
 	#footer
