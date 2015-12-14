@@ -241,6 +241,19 @@ CSS Styleguide
 		padding: 0px 0px 0px 18px;
 	}
 
+	#c42122 {
+    	width: 80%;
+	}
+
+	#c123088 {
+    	width: 75%;
+	}
+
+	#c41839,
+	#c121803 {
+   		width: 60%;
+	}
+
 	#header,
 	#page-container,
 	#featureBlock.featureBlockHome #mainMenu,
@@ -417,7 +430,7 @@ CSS Styleguide
 	.red-yellow .csc-header,
 	.yellow-white .csc-header,
 	.yellow-yellow .csc-header {
-		width: 80%;
+		width: 80% !important;
 	}
 
 	.colHomepage #colLeft {
@@ -468,6 +481,14 @@ CSS Styleguide
 		height: 200px;
 	}
 	
+	#c42122 {
+    	width: 65%;
+	}
+
+	#c123088 {
+    	width: 60%;
+	}
+
 	#readspeaker_button1,
 	#readspeaker_button1 a,
 	.colHomepage #colLeft, 
@@ -671,7 +692,11 @@ CSS Styleguide
     }
 
     #c217322 .layout-body {
-    width: 55%;
+    width: 50%;
+	}
+
+	iframe#twitter-widget-0 {
+    width: 49% !important;
 	}
 
 	#footer
