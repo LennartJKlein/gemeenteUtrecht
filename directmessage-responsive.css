@@ -481,7 +481,8 @@ CSS Styleguide
 		height: 200px;
 	}
 	
-	#c42122 {
+	#c42122,
+	#c70662 {
     	width: 65%;
 	}
 
@@ -691,8 +692,9 @@ CSS Styleguide
     	width: 100%;
     }
 
-    #c217322 .layout-body {
-    width: 50%;
+    #c217322 .layout-body,
+    #c70662 {
+    width: 55%;
 	}
 
 	iframe#twitter-widget-0 {
