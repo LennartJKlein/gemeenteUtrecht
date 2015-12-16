@@ -30,20 +30,6 @@ CSS Styleguide
 #nv #mainMenu .menu-toggle {
 	display: none;
 }
-
-.topTasks.homeTopTasks,
-.topTasks,
-#toptaken {
-		height: 100% !important;
-}
-
-#content input[type=submit] {
-    	margin-left: 0px;
-    	margin-top: 10px;
-}
-#mainContent {
-	background: none !important;
-}
     
 /* GREEN - SMALL DESKTOP*/
 @media only screen and (max-width: 990px) {
@@ -65,13 +51,30 @@ CSS Styleguide
 		width: 100%;
 	}
 	#topbox {
-    	bottom: 10px;
-    	float: left;
-    	height: 100%;
-    	position: initial;
-    	right: 5px;
-    	width: 100%;
+        width: calc(100% - 225px);
+		float: right;
+		right: auto;
+		left: 225px;
+		bottom: -10px;
     }
+
+	.topTasks.homeTopTasks,
+	.topTasks,
+	#toptaken {
+		height: 100% !important;
+	}
+	
+	#content {
+		margin-top: 10px;
+	}
+	
+	#content input[type=submit] {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	#mainContent {
+		background-image: none !important;
+	}
 
 	#page-container {
 		padding: 3%;
@@ -88,9 +91,9 @@ CSS Styleguide
 	#searchBar {
 	    top: 50%;
 		right: 0;
-		-webkit-transform: translateY(-90%);
-		   -moz-transform: translateY(-90%);
-				transform: translateY(-90%);
+		-webkit-transform: translateY(-100%);
+		   -moz-transform: translateY(-100%);
+				transform: translateY(-100%);
 	}
 	
 	#nv-navBlock-wrap {
@@ -155,18 +158,24 @@ CSS Styleguide
 		width: 100%;
 	}
 
-	.headerTitle4Images{
+	#headerafb {
+		margin: 0;
+		padding: 0;	
+	}
+
+	#headerafb,
+	.headerImage,
+	.headerTitle4Images {
 		width: 100%;
 	}
 
 	.image,
 	.image img,
-	.image-center .image {
-		width: 100%;
-	}
+	.image-center .image,
 	.headerImage img {
-    	width: 80%;
-    }
+		width: 100%;
+		height: auto;
+	}
 
 	.topTasks,
 	#toptaken {
@@ -224,17 +233,22 @@ CSS Styleguide
     	float: left;
 	}
 
-	#leftColumn {
-		width: 42% !important;
-		margin-left: 0px !important;
+	body #leftColumn {
+		width: 240px;
+		margin-left: 0px;
 	}
 
 	#mainContent {
-		width: 100% !important;
+		width: calc(100% - 240px);
 	}
 
 	.layout-body {
 		width: 90%;
+	}
+	
+	.red-lightYellow .csc-header,
+	.red-lightYellow .layout-body {
+		width: 100%;
 	}
 
 	#footer {
@@ -260,6 +274,10 @@ CSS Styleguide
 	#featureBlock.featureBlockHome #mainMenu li,
 	#nv #mainMenu,
 	#nv #mainMenu li,
+	.red-lightYellow .csc-header,
+	.red-lightYellow .layout-body,
+	#leftColumn,
+	#mainColumn,
 	.contactBlock,
 	#footer {
 		-webkit-box-sizing: border-box;
@@ -650,6 +668,7 @@ CSS Styleguide
 	.image,
 	.image-center .image {
 		width: 100%;
+		height: auto;
 	}
 
 	.topTasks.homeTopTasks {
