@@ -185,6 +185,11 @@ CSS Styleguide
 		padding-left: 15px;
 	}
 	
+	.nv-navBlockYellowBorder {
+    	border-left: none;
+    	float: left;
+	}
+
 	.slides {
 		float: none;
 	}
@@ -316,7 +321,7 @@ CSS Styleguide
 	#n3 #leftColumn {
 		position: relative;
 		width: 215px;
-		margin-left: 0px;
+		margin-left: 0px !important;
 	}
 
 	#mainContent {
@@ -681,6 +686,7 @@ CSS Styleguide
 
 	#middleColumn {
 		margin-right: 0px !important;
+		margin-top: 10%;
 	}
 
 	#rightColumn {
@@ -914,8 +920,9 @@ CSS Styleguide
 	#mainContent,
 	#n3 #mainContent {
 		float: none;
-		width: 100%;
+		width: 100% !important;
 		padding: 0;
+		margin-left: 0 !important;
 		z-index: 2;
 	}
 	
