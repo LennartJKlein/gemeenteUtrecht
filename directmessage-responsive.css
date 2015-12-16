@@ -349,19 +349,6 @@ CSS Styleguide
 		padding: 0px 0px 0px 18px;
 	}
 
-	#c42122 {
-    	width: 80%;
-	}
-
-	#c123088 {
-    	width: 75%;
-	}
-
-	#c41839,
-	#c121803 {
-   		width: 60%;
-	}
-
 	#footer {
 		position: relative;
 		width: auto;
@@ -722,14 +709,7 @@ CSS Styleguide
 		height: 200px;
 	}
 	
-	#c42122,
-	#c70662 {
-    	width: 65%;
-	}
-
-	#c123088 {
-    	width: 60%;
-	}
+	
 
 	.wide #middleColumn {
 		width: 100%;
@@ -1017,13 +997,13 @@ CSS Styleguide
     	width: 100%;
     }
 
-    #c217322 .layout-body,
-    #c70662 {
-    width: 55%;
-	}
-
 	iframe#twitter-widget-0 {
     width: 49% !important;
+	}
+
+	#content, 
+	#n2 #content {
+		width: 100%;
 	}
 
 	#footer
