@@ -31,29 +31,32 @@ CSS Styleguide
 #n3 #mainMenu .menu-toggle {
 	display: none;
 }
-
-.stick {
-	position: fixed !important;
-	top: 75px;
-}
-.stick-mobile-menu {
-	position: fixed !important;
-    top: 55px;
-    margin: 0;
-    left: 0;
-    right: 0;
-	background-color: #fff;
-    -webkit-box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
-    -moz-box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
-    box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
-    z-index: 999;
-}
     
 /* GREEN - SMALL DESKTOP*/
 @media only screen and (max-width: 990px) {
 	
 	body {
 		background-color: #0F0;
+	}
+	
+	.stick {
+		position: fixed !important;
+		top: 10px;
+	}
+	.stick-mobile-menu {
+		position: fixed !important;
+		top: 10px;
+		margin: 0;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		-webkit-box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
+		-moz-box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
+		box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
+		z-index: 999;
+	}
+	.stick-mobile-menu + #mainContent {
+		margin-top: 89px;
 	}
 	
 	#page-container,
@@ -327,6 +330,11 @@ CSS Styleguide
 	#mainContent {
 		width: calc(100% - 215px);
 	}
+	#nv #mainContent,
+	#n2 #mainContent,
+	#n3 #mainContent {
+		float: right;
+	}
 
 	.layout-body {
 		width: 90%;
@@ -398,8 +406,11 @@ CSS Styleguide
 		padding-top: 10px;
 	}
 	
-	#content{
-		margin-top: 0;
+	.stick {
+		top: 75px;
+	}
+	.stick-mobile-menu {
+		top: 55px;
 	}
 
 	#topMenu {
@@ -471,10 +482,6 @@ CSS Styleguide
 	
 	#nv-navBlock-wrap {
 		border-top: 0;
-	}
-	
-	#n3 #mainContent {
-		float: right;
 	}
 	
 	#featureBlock:after {
@@ -830,10 +837,10 @@ CSS Styleguide
 	#nv #nv-navBlock #mainMenu,
 	#n2 #mainMenu,
 	#n3 #mainMenu {
-		border-left: 7px solid #FC0;
 		margin: 0;
 		width: 100%;
 		overflow: hidden;
+		border-left: 0;
 	}
 	#featureBlock.featureBlockHome #mainMenu .menu-toggle, 
 	#mainMenu .menu-toggle,
@@ -847,6 +854,7 @@ CSS Styleguide
 		padding: 10px 15px;
 		line-height: 34px;
 		vertical-align: middle;
+		border-left: 7px solid #FC0;
 		border-bottom: 1px solid #c6c6c6;
 		color: #444;
 		cursor: pointer;
@@ -868,6 +876,7 @@ CSS Styleguide
 	#nv #mainMenu ul,
 	#n2 #mainMenu ul,
 	#n3 #mainMenu ul {
+		border-left: 7px solid #FFF0B3;
 		display: none;
 	}
 	#featureBlock.featureBlockHome #mainMenu li, 
@@ -954,6 +963,11 @@ CSS Styleguide
 
 	.hStadspromotieItem img{
 		height: auto;
+	}
+	
+	.layout-body {
+		width: 100%;
+		padding: 0;
 	}
 
 	.image,
