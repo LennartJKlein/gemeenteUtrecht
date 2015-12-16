@@ -34,10 +34,7 @@ CSS Styleguide
     
 /* GREEN - SMALL DESKTOP*/
 @media only screen and (max-width: 990px) {
-	
-	body {
-		background-color: #0F0;
-	}
+
 	
 	.stick {
 		position: fixed !important;
@@ -739,7 +736,7 @@ CSS Styleguide
 /* BLUE - MOBILE */
 @media only screen and (max-width: 550px) {
 	body {
-		background-color: #00F;
+		background-color: #F00;
 	}
 	.blue-blue .csc-header,
 	.blue-lightBlue .csc-header,
