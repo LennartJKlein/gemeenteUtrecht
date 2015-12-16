@@ -36,6 +36,18 @@ CSS Styleguide
 	position: fixed !important;
 	top: 75px;
 }
+.stick-mobile-menu {
+	position: fixed !important;
+    top: 55px;
+    margin: 0;
+    left: 0;
+    right: 0;
+	background-color: #fff;
+    -webkit-box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
+    box-shadow: 0 -5px 9px 4px rgba(0,0,0,.3);
+    z-index: 999;
+}
     
 /* GREEN - SMALL DESKTOP*/
 @media only screen and (max-width: 990px) {
@@ -380,6 +392,10 @@ CSS Styleguide
 	#header {
 		padding-top: 10px;
 	}
+	
+	#content{
+		margin-top: 0;
+	}
 
 	#topMenu {
 		height: 55px;
@@ -574,7 +590,8 @@ CSS Styleguide
 	.nv-col1, .nv-col2, .nv-col3, .nv-col4 {
 		width: calc(50% - 108px);
 		border: 1px solid #c6c6c6;
-		margin-bottom: 5px;
+		margin-top: 3px;
+		margin-bottom: 2px;
 		min-height: 70px;
 		height: auto;
 	}
@@ -755,7 +772,7 @@ CSS Styleguide
 	#nv #searchBar, 
 	#n2 #searchBar, 
 	#n3 #searchBar {
-		top: 40%;
+		top: 30%;
    		-webkit-transform: translateY(-80%);
     	   -moz-transform: translateY(-80%);
     			transform: translateY(-80%);
@@ -779,6 +796,8 @@ CSS Styleguide
 	#breadcrumb {
 		left: auto;
 		right: 0;
+		bottom: 17px;
+		height: auto;
 	}
 	
 	#featureBlock.featureBlockHome #mainMenu,
@@ -806,7 +825,7 @@ CSS Styleguide
 	#n2 #mainMenu,
 	#n3 #mainMenu {
 		border-left: 7px solid #FC0;
-		margin: 20px 0;
+		margin: 0;
 		width: 100%;
 		overflow: hidden;
 	}
@@ -889,6 +908,17 @@ CSS Styleguide
 		margin-top: inherit;
 	}
 	
+	#leftColumn, 
+	#n2 #leftColumn, 
+	#n3 #leftColumn,
+	#mainContent,
+	#n3 #mainContent {
+		float: none;
+		width: 100%;
+		padding: 0;
+		z-index: 2;
+	}
+	
 	.colHomepage #colLeft {
 		width: 100%;
 		border-right: 0px;
@@ -945,7 +975,8 @@ CSS Styleguide
     	width: 50%;
 	}
 
-	.toptakencontact ul.topTasks {
+	.toptakencontact #toptaken ul.topTasks {
+		margin-top: 10px !important;
 		width: 100% !important;
 		height: 100% !important;
 	}
@@ -976,7 +1007,7 @@ CSS Styleguide
 
 	#footer
  	.column,
- 	.first,
+ 	/*.first,*/
  	.second,
  	.third {
     	width: 50% !important;
